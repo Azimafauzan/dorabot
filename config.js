@@ -7,7 +7,7 @@ global.APIs = { // API Prefix
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
   hardianto: 'https://hardianto-chan.herokuapp.com',
   jonaz: 'https://jonaz-api-v2.herokuapp.com',
-  neoxr: 'https://api.neoxr.eu.org',
+  neoxr: 'https://neoxr-api.herokuapp.com',
   nrtm: 'https://nurutomo.herokuapp.com',
   pencarikode: 'https://pencarikode.xyz',
   xteam: 'https://api.xteam.xyz',
@@ -24,7 +24,7 @@ global.APIKeys = { // APIKey nya disini
   // 'https://website': 'apikey'
   'https://leyscoders-api.herokuapp.com': 'MIMINGANZ',
   'https://hardianto-chan.herokuapp.com': 'hardianto',
-  'https://api.neoxr.eu.org': 'yntkts',
+  'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'APIKEY',
   'https://api.xteam.xyz': '3b710272e0090cdb',
   'https://zahirr-web.herokuapp.com': 'zahirgans',

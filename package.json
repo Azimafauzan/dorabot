@@ -1,7 +1,7 @@
 {
-  "name": "Doraemond",
+  "name": "_*LIABOT*_",
   "version": "2.0.1",
-  "description": "WhatsApp Bot Ringan",
+  "description": "WhatsApp Bot By Mursid",
   "main": "index.js",
   "scripts": {
     "start": "node index.js --self",

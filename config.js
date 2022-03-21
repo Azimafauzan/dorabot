@@ -1,6 +1,6 @@
 let fs = require('fs')
-global.owner = ['6282387704390','6289601145546'] // Letakan nomor kamu disini
-global.mods = [''] // Moderator?
+global.owner = ['6282259123873','6288233832771'] // Letakan nomor kamu disini
+global.mods = ['6288233832771'] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
@@ -36,14 +36,14 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'saya harap kamu bahagia'
-global.author = 'Dora'
+global.packname = 'Mursid'
+global.author = 'Ganteng'
 
 global.wait = '「 ⏱️ 」Harap tunggu...'
 global.eror = '「❗」Server ERROR!'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '© Doraemond' //change the watermark (beberapa harus manual)
-global.image = 'https://telegra.ph/file/1893a59e90a39b1f593c7.jpg' //change the image
+global.watermark = '© LiaaBot' //change the watermark (beberapa harus manual)
+global.image = 'https://telegra.ph/file/b042cd7765fd0c71a8af3.jpg' //change the image
 
 global.multiplier = 59 // Semakin tinggi, semakin sulit naik level
 

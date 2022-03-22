@@ -6,27 +6,29 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 %me 〕
-├ Hai, %name!
-│
-├ Tersisa *%limit Limit*
-├ Role *%role*
-├ Level *%level (%exp / %maxexp)* [%xp4levelup]
-├ %totalexp XP secara Total
-│ 
-├ Tanggal: *%week %weton, %date*
-├ Tanggal Islam: *%dateIslamic*
-├ Waktu: *%time*
-│
-├ Uptime: *%uptime (%muptime)*
-├ Database: %rtotalreg dari %totalreg
-├ Github:
-├ PRIVATE
-└────
+ ╭──〔 %me 〕─⬣
+║│⬡ Hai, %name!
+║│
+║│⬡ Tersisa : *%limit Limit*
+║│⬡ Role : *%role*
+║│⬡ Level : *%level (%exp / %maxexp)* [%xp4levelup]
+║│⬡ Exp : %totalexp XP
+║│
+║│⬡ Tanggal : *%week %weton, %date*
+║│⬡ Tanggal Islam : *%dateIslamic*
+║│⬡ Waktu : *%time*
+║│
+║│⬡ Uptime : *%uptime (%muptime)*
+║│⬡ Database : %rtotalreg dari %totalreg
+║│⬡ Memory Used : ${ramDipake}MB / ${totalram}MB
+║│⬡ Facebook :
+║│⬡ facebook.com/nurul.latifa.73744
+║╰───═┅═───⬣
+╰───────────
 %readmore`.trimStart(),
-  header: '┌─〔 %category 〕',
-  body: '├ %cmd %islimit %isPremium',
-  footer: '└────\n',
+  header: '╭──〔 %category 〕─⬣',
+  body: '║│⬡%cmd %islimit %isPremium',
+  footer: '╰────────\n',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -265,10 +267,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', 'By Mursid (+6288233832771)', 'status@broadcast')
-    conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), '© Chika cantik', 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
+    await conn.fakeReply(m.chat, 'Loading...', '0@s.whatsapp.net', 'BY FAUZAN (+6281938613895)', 'status@broadcast')
+    conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), '© LiaBot', 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, 'Loading...', m)
     throw e
   }
 }
